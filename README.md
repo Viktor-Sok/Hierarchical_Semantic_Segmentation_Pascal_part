@@ -38,7 +38,7 @@ The model was trained with two different losses: ordinary BCE loss and Focal-Tre
 ![](assets/metrics.png)
 
 
-## Inference [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Viktor-Sok/Image_Editing_StyleCLIP_Optimization/blob/main/notebooks/styleCLIP_optimization_playground.ipynb)
+## Inference [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Viktor-Sok/Hierarchical_Semantic_Segmentation_Pascal_part/blob/main/Notebooks/Model_comparison.ipynb)
 
 During inference, as was proposed in the aforementioned article, we choose a path in the hierarchy tree with the highest scores
 ![](assets/results.jpg)
