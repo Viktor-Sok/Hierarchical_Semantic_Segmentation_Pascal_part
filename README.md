@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository is an attempt to implement the hierarchical segmentation approach from [this](https://arxiv.org/abs/2203.14335) work on the Pascal-Person-Part dataset. The authors proposed the loss function, Focal-Tree-Min-Loss, which incorporates the hierarchical structure of the data without the necessity to change the common architectures of segmentation neural networks (NN). In our case, we have three levels of hierarchy:
+This repository is an attempt to implement the hierarchical segmentation approach from [this](https://arxiv.org/abs/2203.14335) work on the Pascal-Person-Part dataset. The authors proposed the loss function, Focal-Tree-Min-Loss, which incorporates the hierarchical structure of the data without the necessity to change the common architectures of segmentation neural networks. In our case, we have three levels of hierarchy:
 ```
 ├── (0) background
 └── body
@@ -32,7 +32,7 @@ Also, we performed some data augmentation
 ![](assets/augmentation.jpg)
 
 
-## Training [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Viktor-Sok/Image_Editing_StyleCLIP_Optimization/blob/main/notebooks/styleCLIP_optimization_playground.ipynb)
+## Training [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Viktor-Sok/Hierarchical_Semantic_Segmentation_Pascal_part/blob/main/Notebooks/Model_training.ipynb)
 
 The model was trained with two different losses: ordinary BCE loss and Focal-Tree-Min-Loss. The mean IoUs per each hierarchy level on the validation set are shown below. The metrics of both models look almost identical, but Focal-Tree-Min-Loss performs slightly better on the lower levels of the hierarchy, which was observed during numerous experiments.
 ![](assets/metrics.png)
