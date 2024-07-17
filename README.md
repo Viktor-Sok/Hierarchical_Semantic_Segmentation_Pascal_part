@@ -37,14 +37,14 @@ Also, we performed some data augmentation
 The model was trained with two different losses: ordinary BCE loss and Focal-Tree-Min-Loss. The mean IoUs per each hierarchy level on the validation set are shown below. The metrics of both models look almost identical, but Focal-Tree-Min-Loss performs slightly better on the lower levels of the hierarchy, which was observed during numerous experiments.
 ![](assets/metrics.png)
 
-
 ## Inference [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/Viktor-Sok/Hierarchical_Semantic_Segmentation_Pascal_part/blob/main/Notebooks/Model_comparison.ipynb)
 
 During inference, as was proposed in the aforementioned article, we choose a path in the hierarchy tree with the highest scores
 ![](assets/results.jpg)
 
 ## Conclusions
-In the article, using their approach, the authors achieved significantly better performance than with ordinary cross-entropy loss. However, in our implementation, we did not manage to reproduce their results. This discrepancy may be due to various factors including differences in network architecture, purely tuned hyperparameters, or even errors in the implementation. Therefore, thorough testing of the implementation is required, along with conducting more experiments. 
+In the article, using their approach, the authors achieved significantly better performance than with ordinary cross-entropy loss. However, in our implementation, we were unable to replicate their impressive results. We observed only a minimal improvement in mIoU when using Focal Tree-Min Loss compared to BCE, as demonstrated in the table below.
+![](assets/distro.png)
 ## Links
 1. [Segmentation Models Pytorch](https://github.com/qubvel-org/segmentation_models.pytorch)
 2. [Deep Hierarchical Semantic Segmentation](https://arxiv.org/abs/2203.14335)
