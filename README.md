@@ -43,7 +43,7 @@ During inference, as was proposed in the aforementioned article, we choose a pat
 ![](assets/results.jpg)
 
 ## Conclusions
-In the article, using their approach, the authors achieved significantly better performance than with ordinary cross-entropy loss. However, in our implementation, we were unable to replicate their impressive results. We observed only a minimal improvement in mIoU when using Focal Tree-Min Loss compared to BCE, as demonstrated in the table below.
+In the article, using their approach, the authors achieved significantly better performance than with ordinary cross-entropy loss. However, in our implementation, we were unable to replicate their impressive results. We observed only a negligible improvement in mIoU when using Focal Tree-Min Loss compared to BCE, as demonstrated in the table below.
 ![](assets/distro.png)
 ## Links
 1. [Segmentation Models Pytorch](https://github.com/qubvel-org/segmentation_models.pytorch)
